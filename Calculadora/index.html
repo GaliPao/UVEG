@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora</title>
+
+  
+  <link rel="stylesheet" href="calculadora.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="card" id="calculadora">
+      <h1 class="title">Calculadora</h1>
+
+      <!-- Pantalla -->
+      <div class="screen" id="screen" aria-label="Pantalla de calculadora">
+        <div class="screen__op" id="screenOp">0</div>
+        <div class="screen__result" id="screenResult">0</div>
+      </div>
+
+      <!-- Botones -->
+      <div class="grid" role="group" aria-label="Teclado de calculadora">
+
+        <!-- Fila 1 -->
+        <button class="btn btn--muted" data-action="clear">C</button>
+        <button class="btn btn--op" data-op="/">÷</button>
+        <button class="btn btn--op" data-op="*">×</button>
+        <button class="btn btn--op" data-op="-">−</button>
+
+        <!-- Fila 2 -->
+        <button class="btn" data-num="7">7</button>
+        <button class="btn" data-num="8">8</button>
+        <button class="btn" data-num="9">9</button>
+        <button class="btn btn--op" data-op="+">+</button>
+
+        <!-- Fila 3 -->
+        <button class="btn" data-num="4">4</button>
+        <button class="btn" data-num="5">5</button>
+        <button class="btn" data-num="6">6</button>
+        <button class="btn btn--equals" data-action="equals">=</button>
+
+        <!-- Fila 4 -->
+        <button class="btn" data-num="1">1</button>
+        <button class="btn" data-num="2">2</button>
+        <button class="btn" data-num="3">3</button>
+
+        <!-- Fila 5 -->
+        <button class="btn btn--wide" data-num="0">0</button>
+        <button class="btn" data-action="dot">.</button>
+    </section>
+  </main>
+  <script src="calculadora.js"></script>
+</body>
+</html>
